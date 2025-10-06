@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML project</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: purple;  
+        }
+
+        hr {
+            margin: 15px 0;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 900px;
+            border: 1px solid #ccc;
+        }
+        .intro {
+            margin: 40px auto;
+            width: 80%;
+        }
+        .intro h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .into p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .tech-logos{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 20px;
+        }
+        .tech-logos img{
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .footer{
+            margin-top: 40px;
+            padding: 15px;
+            font-size: 14px;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to My HTML project</h1>
+<hr>
+<!-- Navigation Menu -->
+ <nav>
+    <a href="form.html">Form</a>
+    <a href="table.html">Table</a>
+    <a href="list.html">List</a>
+    <a href="videocontent.html">Video content</a>
+ </nav>
+
+ <hr>
+
+ <!-- moving text -->
+<b><marquee direction="left" scrollamount = "6">This is My First HTML project</marquee></b>
+<b><marquee direction="right" scrollamount = "6">The Project contains images , form tag , table tag</marquee></b>
+
+<hr>
+<div class = "image image-container">
+    <img src="project.jpg.jpg" alt="HTML-projects">
+</div>
+
+<div class = "intro">
+    <h2>INTRODUCTION</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Beatae nisi aliquid adipisci voluptas harum voluptatibus et voluptatem praesentium reprehenderit numquam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, odio.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloribus nisi blanditiis deleniti, aperiam corrupti.</p>
+</div>
+
+<div class = "tech-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JAVA SCRIPT">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="REACT">
+    <img src="https://nodejs.org/static/images/logo.svg" alt="NODE JS">
+    <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="MONGO DB">
+    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="GIT">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GITHUB">
+    <img src="https://www.netlify.com/v3/img/components/logomark.png"alt="netlify">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/375px-Flask_logo.svg.png" alt="flask">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/225px-Python-logo-notext.svg.png" alt="python">
+    <img src="https://code.visualstudio.com/assets/favicon.ico" alt="vscode">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/500px-Pandas_logo.svg.png" alt="pandas">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/330px-ChatGPT-Logo.svg.png" alt="chatgpt">
+
+</div>
+
+<div class="footer">
+    © 2025 My HTML Project . All right reserved
+</div>
+
+</body>
+
+</html>

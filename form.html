@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        form { max-width: 500px; margin: auto; }
+        label { display: block; margin-top: 15px; }
+        .section { margin-bottom: 20px; }
+    </style>
+    <script>
+        function addDateTime(event) {
+            const now = new Date();
+            const dateTimeField = document.getElementById('datetime');
+            dateTimeField.value = now.toISOString();
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <h1>Fill the form.....</h1> 
+    <hr>
+    <form action="" method="get" onsubmit="addDateTime(event)">
+        <div class="section">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="section">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="section">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="section">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" style="display:inline;">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" style="display:inline;">Female</label>
+        </div>
+        <div class="section">
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports" style="display:inline;">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music" style="display:inline;">Music</label>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading" style="display:inline;">Reading</label>
+        </div>
+        <div class="section">
+            <label for="dropdown">Select Subject:</label>
+            <select id="dropdown" name="dropdown" required>
+                <option value="option1">Math</option>
+                <option value="option2">Physics</option>
+                <option value="option3">Bio</option>
+                <option value="option4">Arts</option>
+            </select>
+        </div>
+        <input type="hidden" id="datetime" name="datetime">
+        <div class="section">
+            <button type="submit">Submit</button>
+        </div>
+        <nav>
+            <a href="index.html">Back to main page.....</a>
+        </nav>
+    </form>
+    </center>
+</body>
+</html>
+	
+    
